@@ -19,7 +19,7 @@ class MysqliDB extends mysqli implements DBInterface {
 	const DB_HOST = "localhost";
 	const DB_USERNAME = "root"; //would obviously change this but Im not sure how it works for you when I give you the sql file so im leaving it standard
 	const DB_PASSWORD = "";     //same as the username ,would normally change this
-	const DB_NAME = "AssesmentDB";
+	const DB_NAME = "AssessmentDB";
 
 	//Error Messages , kept in constants here so its easier to manage in the future.
 	const ERRORINVALIDCREDENTIALS = "Invalid password/email";
