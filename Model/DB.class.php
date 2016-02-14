@@ -110,7 +110,9 @@ class MysqliDB extends mysqli implements DBInterface {
 	//get all the users out of the database and return a user array
 	public function getAllusers(){
 		$query = "SELECT *
-				  FROM Users";
+			  FROM Users
+			  ORDER BY id DESC";
+		//Using ORDER BY id DESC so that it shows us the most recently inserted user first;
 
 		$result = $this->query($query) or die("ERROR : " . $this->error);
 
