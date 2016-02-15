@@ -48,7 +48,7 @@ $app = new App();
       //show User the Register view
       $app->registerViewHTML();
     } else {
-      //the User is not logged in
+      //User is logged in
       //show User the Logout view
       $app->logoutViewHTML();
       //show User the DeleteAccount view
